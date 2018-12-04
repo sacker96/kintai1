@@ -1,0 +1,11 @@
+type Mutation {
+  login(systemId: String, email: String, password: String): AuthPayload
+  adminlogin(systemId: String, email: String, password: String): AuthPayload
+  masterlogin(email: String, password: String): AuthPayload
+  refresh: AuthPayload
+}
+
+type AuthPayload {
+  token: String!
+  systemId: String!
+}

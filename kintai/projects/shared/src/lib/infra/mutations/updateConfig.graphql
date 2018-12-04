@@ -1,0 +1,5 @@
+mutation UpdateConfig($item: [ConfigInput]) {
+  updateConfig(input: $item) {
+    name
+  }
+}

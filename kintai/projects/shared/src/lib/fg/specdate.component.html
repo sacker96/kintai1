@@ -1,0 +1,87 @@
+<mat-radio-group class="example-radio-group" name="range" [formControl]="localform.controls['range']">
+
+<div class="row mb-1" *ngIf="to['month'] !== undefined ? to['month'] : true">
+  <div class="col-auto pt-3">
+    <mat-radio-button class="example-radio-button" value="range1"> 指定月</mat-radio-button>
+  </div>
+  <div class="col-auto">
+    <div class="form-inline">
+      <a (click)="addMonth(-1)" class="mx-2">＜</a>
+      <mat-form-field style="width:5em;">
+        <mat-select [formControl]="localform.controls['range1year']" [disabled]="localform.controls['range'].value !== 'range1'">
+          <mat-option *ngFor="let v of list.year" [value]="v">
+            {{v}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      年
+      <mat-form-field style="width:4em;">
+        <mat-select [formControl]="localform.controls['range1month']" [disabled]="localform.controls['range'].value !== 'range1'">
+          <mat-option *ngFor="let v of list.month" [value]="v">
+            {{v}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      月度
+      <a (click)="addMonth(1)" class="mx-2">＞</a>
+    </div>
+  </div>
+</div>
+
+<div class="row mb-1" *ngIf="to['day']">
+  <div class="col-auto pt-3">
+    <mat-radio-button class="example-radio-button" value="range3"> 指定日　</mat-radio-button>
+  </div>
+  <div class="col-auto">
+    <div class="form-inline">
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker1" [formControl]="localform.controls['range3']" placeholder="選択してください" [disabled]="localform.controls['range'].value !== 'range3'">
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+      </mat-form-field>
+    </div>
+  </div>
+</div>
+
+<div class="row mb-1" *ngIf="to['range'] !== undefined ? to['range'] : true">
+  <div class="col-auto pt-3">
+    <mat-radio-button class="example-radio-button" value="range2"> 指定期間</mat-radio-button>
+  </div>
+  <div class="col-auto">
+    <div class="form-inline">
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker2" [formControl]="localform.controls['range2start']" placeholder="選択してください" [disabled]="localform.controls['range'].value !== 'range2'">
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+      </mat-form-field>
+      <span class="mx-2">〜</span>
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker3" [formControl]="localform.controls['range2end']" placeholder="選択してください" [disabled]="localform.controls['range'].value !== 'range2'">
+        <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+        <mat-datepicker #picker3></mat-datepicker>
+      </mat-form-field>
+    </div>
+  </div>
+</div>
+
+<div class="row mb-1" *ngIf="to['year']">
+  <div class="col-auto pt-3">
+    <mat-radio-button class="example-radio-button" value="range4"> 指定年</mat-radio-button>
+  </div>
+  <div class="col-auto">
+    <div class="form-inline">
+      <a (click)="addYear(-1)" class="mx-2">＜</a>
+      <mat-form-field style="width:5em;">
+        <mat-select [formControl]="localform.controls['range4year']" [disabled]="localform.controls['range'].value !== 'range4'">
+          <mat-option *ngFor="let v of list.year" [value]="v">
+            {{v}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      年
+      <a (click)="addYear(1)" class="mx-2">＞</a>
+    </div>
+  </div>
+</div>
+
+</mat-radio-group>

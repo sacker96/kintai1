@@ -1,0 +1,17 @@
+query GetHolidays {
+  holidays {
+    id
+    created
+    updated
+    name
+    short
+    amount
+    holiday_type
+    paid_type
+    range
+    compensatory_term_from
+    limit_mode_from
+    compensatory_term
+    limitmode
+  }
+}

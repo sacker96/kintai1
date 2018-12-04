@@ -1,0 +1,5 @@
+mutation CreateAccount($item: AccountInput) {
+  createAccount(input: $item) {
+    id
+  }
+}

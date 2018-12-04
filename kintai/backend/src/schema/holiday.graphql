@@ -1,0 +1,40 @@
+type Query {
+  holidays: [Holiday]
+  holiday(id: ID!): Holiday!
+}
+
+type Mutation {
+  createHoliday(input: HolidayInput): Holiday!
+  updateHoliday(input: HolidayInput): Holiday!
+}
+
+type Holiday {
+  id: ID
+  name: String
+  short: String
+  amount: Int
+  holiday_type: String
+  paid_type: String
+  range: String
+  compensatory_term_from: String
+  limit_mode_from: String
+  compensatory_term: String
+  limitmode: String
+  created: String!
+  updated: String!
+}
+
+input HolidayInput {
+  id: ID
+  name: String
+  short: String
+  amount: Int
+  holiday_type: String
+  paid_type: String
+  range: String
+  compensatory_term_from: String
+  limit_mode_from: String
+  compensatory_term: String
+  limitmode: String
+
+}

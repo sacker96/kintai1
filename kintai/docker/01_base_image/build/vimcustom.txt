@@ -1,0 +1,20 @@
+
+"-----------------Add Config Start------------------------ 
+" 検索履歴を50個残す 
+set history=50 
+" 検索語にマッチした単語をハイライトする
+set hlsearch
+" 行番号を表示する 
+set number 
+" 括弧入力時に対応する括弧を強調する 
+set showmatch 
+" オートインデント機能の設定 
+set autoindent 
+" 挿入（貼り付け）モードを設定する 
+set paste 
+" 構文ごとに色分け表示する 
+syntax on 
+" [ syntax on ] の場合のコメント文の色を変更する 
+highlight Comment ctermfg=LightCyan 
+"-----------------Add Config End-------------------------
+

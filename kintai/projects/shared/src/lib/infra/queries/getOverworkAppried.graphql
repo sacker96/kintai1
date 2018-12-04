@@ -1,0 +1,8 @@
+query GetOverworkAppried($id: ID!) {
+  overworkAppried(id: $id) {
+    id
+    created
+    updated
+
+  }
+}

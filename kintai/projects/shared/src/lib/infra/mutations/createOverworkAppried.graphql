@@ -1,0 +1,5 @@
+mutation CreateOverworkAppried($item: OverworkAppriedInput) {
+  createOverworkAppried(input: $item) {
+    id
+  }
+}

@@ -1,0 +1,5 @@
+mutation UpdateAdit($item: AditInput) {
+  updateAdit(input: $item) {
+    id
+  }
+}

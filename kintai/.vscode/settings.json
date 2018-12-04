@@ -1,0 +1,7 @@
+{
+  "tslint.exclude": [
+    "**/dist/**",
+    "**/template/**",
+    "**/node_modules/**"
+  ]
+}

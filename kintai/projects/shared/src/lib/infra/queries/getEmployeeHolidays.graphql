@@ -1,0 +1,8 @@
+query GetEmployeeHolidays {
+  employeeHolidays {
+    id
+    created
+    updated
+
+  }
+}

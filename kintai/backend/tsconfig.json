@@ -1,0 +1,36 @@
+{
+   "compilerOptions": {
+      "lib": [
+         "es5",
+         "es6"
+      ],
+      "target": "es6",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "outDir": "./build",
+
+      "baseUrl": "./",
+      "paths": {
+        "core/*": ["../core/*"],
+        "core": ["../core"],
+      },
+
+      "allowUnreachableCode": true,
+      "allowUnusedLabels": false,
+      "alwaysStrict": true,
+      "noImplicitAny": false,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noUnusedLocals": false,
+      "noUnusedParameters": false,
+      "strictNullChecks": true,
+      "suppressImplicitAnyIndexErrors": true,
+      "pretty": true,
+      "noEmitHelpers": true,
+      "importHelpers": true,
+
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "sourceMap": true
+   }
+}

@@ -1,0 +1,5 @@
+mutation UpdateEmployeeHoliday($item: EmployeeHolidayInput) {
+  updateEmployeeHoliday(input: $item) {
+    id
+  }
+}

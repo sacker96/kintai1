@@ -1,0 +1,8 @@
+query Get{Name}s {
+  {name}s {
+    id
+    created
+    updated
+
+  }
+}

@@ -1,0 +1,8 @@
+query GetAdits {
+  adits {
+    id
+    created
+    updated
+
+  }
+}

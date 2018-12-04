@@ -1,0 +1,8 @@
+query GetClosings {
+  closings {
+    id
+    created
+    updated
+
+  }
+}

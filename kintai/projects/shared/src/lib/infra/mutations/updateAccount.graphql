@@ -1,0 +1,5 @@
+mutation UpdateAccount($item: AccountInput) {
+  updateAccount(input: $item) {
+    id
+  }
+}

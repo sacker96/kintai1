@@ -1,0 +1,23 @@
+type Query {
+  closings: [Closing]
+  closing(id: ID!): Closing!
+}
+
+type Mutation {
+  createClosing(input: ClosingInput): Closing!
+  updateClosing(input: ClosingInput): Closing!
+}
+
+type Closing {
+  id: ID
+  date: String
+  status: String
+  created: String!
+  updated: String!
+}
+
+input ClosingInput {
+  id: ID
+  date: String
+  status: String
+}

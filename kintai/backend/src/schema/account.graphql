@@ -1,0 +1,49 @@
+type Query {
+  accounts: [Account]
+  account(systemId: String!): Account!
+}
+
+type Mutation {
+  createAccount(input: AccountInput): Account!
+  updateAccount(input: AccountInput): Account!
+}
+
+type Account {
+  id: ID
+  systemId: String!
+  accountId: String
+  password: String
+  company: String!
+  busho: String
+  name: String!
+  zip: String
+  address: String
+  address2: String
+  tel: String
+  email: String!
+  staff: String
+  remarks: String
+  status: String!
+  num: Int!
+  created: String
+  updated: String
+}
+
+input AccountInput {
+  id: ID
+  systemId: String!
+  accountId: String
+  password: String
+  company: String!
+  busho: String
+  name: String!
+  zip: String
+  address: String
+  address2: String
+  tel: String
+  email: String!
+  staff: String
+  remarks: String
+  status: String!
+  num: Int!
+}

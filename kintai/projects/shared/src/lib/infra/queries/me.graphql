@@ -1,0 +1,21 @@
+query Me {
+  me {
+    id
+    created
+    updated
+    lname
+    fname
+    email
+    tel
+    birth
+    employee_code
+    salary
+    transportation
+    enter
+    leave
+    free_note
+    free_note_2
+    free_note_3
+    tags
+  }
+}

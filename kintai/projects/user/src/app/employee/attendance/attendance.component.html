@@ -1,0 +1,146 @@
+<div class="content-header sty-one">
+  <h1>出勤簿</h1>
+</div>
+
+<div class="content">
+  <div class="white">
+
+    <h2 class="title"><i class="fa fa-search"></i>検索条件設定</h2><form class="filter" (submit)="submit()">
+      <fg class="form-inline" [model]="filter.model" [fields]="filter.fields" [form]="filter.form"></fg>
+      <div class="text-center">
+        <button type="submit" mat-raised-button>表示</button>
+      </div>
+    </form>
+
+  </div>
+
+  <div class="white mt-4">
+    <h2 class="title">{{selectedDate}} の出勤簿</h2>
+    <div class="row">
+      <div class="col-sm">
+        <table class="table table-sm table-striped">
+          <thead>
+            <tr><th colspan="2" class="text-center">ユーザー情報</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>表示期間</th>
+              <td>{{selectedDate}}</td>
+            </tr>
+            <tr>
+              <th>スタッフコード</th>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>所定労働日数</th>
+              <td>0 日</td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr><th colspan="2" class="text-center">労働時間</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>実労働時間</th>
+              <td>00:00</td>
+            </tr>
+            <tr>
+              <th>実残業時間</th>
+              <td>00:00</td>
+            </tr>
+            <tr>
+              <th>実深夜時間</th>
+              <td>00:00</td>
+            </tr>
+            <tr>
+              <th>平日労働時間</th>
+              <td>00:00</td>
+            </tr>
+            <tr>
+              <th>平日残業時間</th>
+              <td>00:00</td>
+            </tr>
+            <tr>
+              <th>平日深夜時間</th>
+              <td>00:00</td>
+            </tr>
+            <tr>
+              <th>休日労働時間</th>
+              <td>00:00</td>
+            </tr>
+            <tr>
+              <th>休日残業時間</th>
+              <td>00:00</td>
+            </tr>
+            <tr>
+              <th>休日深夜時間</th>
+              <td>00:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm">
+        <table class="table table-sm table-striped">
+          <thead>
+            <tr>
+              <th colspan="2" class="text-center">基本項目</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>実働日数</th>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>平日出勤日数</th>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>休日出勤日数</th>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>欠勤日数</th>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>遅刻回数</th>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>早退回数</th>
+              <td>0</td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th colspan="2" class="text-center">本日時点 休暇残日数</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>有休</th>
+              <td>00.00</td>
+            </tr>
+            <tr>
+              <th>代休</th>
+              <td>00.00</td>
+            </tr>
+            <tr>
+              <th>振休</th>
+              <td>00.00</td>
+            </tr>
+            <tr>
+              <th>リフレッシュ</th>
+              <td>00.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="white mt-4">
+    <datatable [rows]="rows" [columns]="columns"></datatable>
+  </div>
+</div>

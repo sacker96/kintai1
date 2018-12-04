@@ -1,0 +1,18 @@
+<div class="content-header sty-one">
+  <h1>Dashboard</h1>
+</div>
+
+<div class="content">
+  <div class="white">
+
+    <h2>新規クライアント登録</h2>
+    <form class="vm" (submit)="submit()" (keydown.enter)="$event.preventDefault()">
+      <input type="password" name="dummypass" style="top: -100px; left: -200px; position: fixed;" />
+      <fg [model]="model" [fields]="fields" [form]="form"></fg>
+      <div class="text-center">
+        <button type="submit" color="warn" mat-raised-button>登録する</button>
+      </div>
+    </form>
+
+  </div>
+</div>

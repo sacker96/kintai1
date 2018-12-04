@@ -1,0 +1,8 @@
+query GetHolidayApprieds {
+  holidayApprieds {
+    id
+    created
+    updated
+
+  }
+}

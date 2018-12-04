@@ -1,0 +1,21 @@
+<div class="content-header sty-one">
+  <h1>休暇申請管理 / 休暇管理 / 休暇タイプ設定</h1>
+</div>
+
+<div class="content">
+  <div class="white">
+
+    <div class="text-left">
+      <a routerLink="../edit-holiday-add/_" color="accent" mat-raised-button>休暇タイプ登録</a>
+    </div>
+
+    <div class="mt-4">
+      <datatable [rows]="rows" [columns]="columns"></datatable>
+    </div>
+
+  </div>
+</div>
+
+<ng-template #editTemplate let-row="row" let-value="value" let-i="index">
+  <a routerLink="../edit-holiday-add/{{row.id}}" color="primary" mat-raised-button>編集</a>
+</ng-template>

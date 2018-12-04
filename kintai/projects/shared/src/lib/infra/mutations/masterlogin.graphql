@@ -1,0 +1,6 @@
+mutation MasterLogin($email: String, $password: String) {
+  masterlogin(email: $email, password: $password) {
+    token,
+    systemId
+  }
+}

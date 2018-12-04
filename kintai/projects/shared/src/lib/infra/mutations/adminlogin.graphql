@@ -1,0 +1,6 @@
+mutation AdminLogin($systemId: String, $email: String, $password: String) {
+  adminlogin(systemId: $systemId, email: $email, password: $password) {
+    token,
+    systemId
+  }
+}

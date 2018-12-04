@@ -1,0 +1,5 @@
+mutation CreateClosing($item: ClosingInput) {
+  createClosing(input: $item) {
+    id
+  }
+}

@@ -1,0 +1,17 @@
+<div class="content-header sty-one">
+  <h1>スタッフ管理 / マイページ設定 / 出勤簿項目編集（PCマイページ）</h1>
+</div>
+
+<div class="content">
+  <div class="white">
+
+    <form class="vm" (submit)="submit()" (keydown.enter)="$event.preventDefault()">
+      <fg class="form" [model]="vm1.model" [fields]="vm1.fields" [form]="vm1.form"></fg>
+      <fg class="form" [model]="vm2.model" [fields]="vm2.fields" [form]="vm2.form"></fg>
+      <div class="text-center">
+        <button type="submit" color="warn" mat-raised-button>保存</button>
+      </div>
+    </form>
+
+  </div>
+</div>

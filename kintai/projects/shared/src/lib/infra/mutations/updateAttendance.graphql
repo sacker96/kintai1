@@ -1,0 +1,5 @@
+mutation UpdateAttendance($item: AttendanceInput) {
+  updateAttendance(input: $item) {
+    id
+  }
+}

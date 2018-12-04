@@ -1,0 +1,8 @@
+query GetHolidayWorkingAppried($id: ID!) {
+  holidayWorkingAppried(id: $id) {
+    id
+    created
+    updated
+
+  }
+}

@@ -1,0 +1,86 @@
+#
+# These groups are read by MariaDB server.
+# Use it for options that only the server (but not clients) should see
+#
+# See the examples of server my.cnf files in /usr/share/mysql/
+#
+
+# this is read by the standalone daemon and embedded servers
+[server]
+
+# this is only for the mysqld standalone daemon
+[mysqld]
+
+##
+# プラグイン
+##
+
+# MySQLデータベースへのアクセスを高速化するためのプラグイン
+plugin-load = handlersocket.so
+
+
+##
+# ロギング設定
+##
+
+# 警告も全て出力する場合は、1を設定
+log_warnings = 1
+
+# ログ取得形式の指定（FILE:/var/lib/mysql,TABLE:データベース内に残す）
+log-output = TABLE
+
+# エラーログの場所
+log_error = /var/log/mariadb/mariadb-error.log
+
+# Slowクエリファイルの場所（log-output = TABLEのときに有効）
+slow_query_log_file = /var/log/mariadb/mariadb-slow.log
+
+# Slowクエリログ出力有効化
+slow_query_log = ON
+
+# Slowクエリとして認識させる時間[秒] 
+long_query_time = 0.1
+
+#インデックスを使用していないクエリをログに残す
+#log-queries-not-using-indexes
+
+
+##
+# 文字コードの設定
+##
+character-set-server = utf8mb4
+collation-server = utf8mb4_general_ci
+init-connect = SET NAMES utf8mb4
+
+#
+# * Galera-related settings
+#
+[galera]
+# Mandatory settings
+#wsrep_on = ON
+#wsrep_provider = 
+#wsrep_cluster_address = 
+#binlog_format = row
+#default_storage_engine = InnoDB
+#innodb_autoinc_lock_mode = 2
+#
+# Allow server to accept connections on all interfaces.
+#
+#bind-address = 0.0.0.0
+#
+# Optional setting
+#wsrep_slave_threads = 1
+#innodb_flush_log_at_trx_commit = 0
+
+# this is only for embedded server
+[embedded]
+
+# This group is only read by MariaDB servers, not by MySQL.
+# If you use the same .cnf file for MySQL and MariaDB,
+# you can put MariaDB-only options here
+[mariadb]
+
+# This group is only read by MariaDB-10.2 servers.
+# If you use the same .cnf file for MariaDB of different versions,
+# use this group for options that older servers don't understand
+[mariadb-10.2]

@@ -1,0 +1,35 @@
+type Query {
+  adits: [Adit]
+  adit(id: ID!): Adit!
+  aditsByDate(date: String!): [Adit]
+}
+
+type Mutation {
+  createAdit(input: AditInput): Adit!
+  updateAdit(input: AditInput): Adit!
+  createAditByFelica(felica: String!): Adit!
+}
+
+type Adit {
+  id: ID
+  employeeId: Int
+  type: String
+  method: String
+  aditAt: String
+  notice: String
+  status: String
+  history: String
+  created: String!
+  updated: String!
+}
+
+input AditInput {
+  id: ID
+  employeeId: Int
+  type: String
+  method: String
+  aditAt: String
+  notice: String
+  status: String
+  history: String
+}

@@ -1,0 +1,8 @@
+query GetMessage($id: ID!) {
+  message(id: $id) {
+    id
+    created
+    updated
+
+  }
+}

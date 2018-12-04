@@ -1,0 +1,20 @@
+query GetAccount($systemId: String!) {
+  account(systemId: $systemId) {
+    id
+    created
+    updated
+    systemId
+    company
+    name
+    busho
+    zip
+    address
+    address2
+    tel
+    email
+    num
+    staff
+    remarks
+    status
+  }
+}

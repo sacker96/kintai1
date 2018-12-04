@@ -1,0 +1,68 @@
+<div class="content-header sty-one">
+  <h1>Dashboard</h1>
+</div>
+
+<div class="content">
+  <div class="white">
+
+    <h2 class="title huge">打刻</h2>
+
+    <div class="mx-sm-5">
+      <p class="h3">{{currentStatus}}</p>
+
+      <div class="text-center mx-sm-5">
+        <p class="huge2" *ngIf="processing === true">打刻</p>
+        <p class="huge2" *ngIf="processing === false">{{currentTime | date:'HH:mm:ss'}}</p>
+        <form class="vm" (submit)="submit()" (keydown.enter)="$event.preventDefault()">
+          <fg [model]="vm.model" [fields]="vm.fields" [form]="vm.form"></fg>
+          <button type="submit" class="d-block w-100" color="warn" mat-raised-button>PUSH</button>
+          <div class="text-left mt-3">
+            <label for=""><input type="checkbox"> 夜勤モード</label>
+            <div>
+              総計：0:00　休憩：0:00　残業：0:00　深夜：0:00
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row mt-4">
+    <div class="col">
+      <div class="white">
+        <h2 class="title">▼ 以下の項目の確認をお願いいたします。</h2>
+        <table class="table table-sm">
+          <tr>
+            <th>打刻漏れ・打刻間違い</th>
+            <td class="text-right">
+              <a routerLink="/employee/attendance">0</a> 件
+            </td>
+          </tr>
+          <tr>
+            <th>打刻エラー</th>
+            <td class="text-right">
+              <a routerLink="/employee/attendance">0</a> 件
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="col">
+      <div class="white">
+        <h2 class="title">▼ 管理者からのお知らせ</h2>
+        <table class="table table-sm">
+          <tr>
+            <td class="text-danger">未確認</td>
+            <td class="text-danger">2018/10/01</td>
+            <td>test</td>
+            <td>テストメール</td>
+          </tr>
+        </table>
+        <p class="text-right">
+          <a routerLink="/employee/manager-message">全てのお知らせをみる</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

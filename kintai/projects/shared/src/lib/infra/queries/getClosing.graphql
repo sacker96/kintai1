@@ -1,0 +1,8 @@
+query GetClosing($id: ID!) {
+  closing(id: $id) {
+    id
+    created
+    updated
+
+  }
+}

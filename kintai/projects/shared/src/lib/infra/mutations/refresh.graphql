@@ -1,0 +1,6 @@
+mutation Refresh {
+  refresh {
+    token,
+    systemId
+  }
+}

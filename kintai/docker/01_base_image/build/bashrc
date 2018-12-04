@@ -1,0 +1,5 @@
+
+# Add Config
+alias vi='vim'
+PS1='[\u@\H \w]\$'
+export LANG=ja_JP.UTF-8

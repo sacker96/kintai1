@@ -1,0 +1,5 @@
+mutation CreateAdit($item: AditInput) {
+  createAdit(input: $item) {
+    id
+  }
+}

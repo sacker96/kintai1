@@ -1,0 +1,4 @@
+{
+    "name": "KintaiSystem",
+    "script" : "/var/data/node_apps/KintaiSys/bin/www"
+}

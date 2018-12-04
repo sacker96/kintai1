@@ -1,0 +1,5 @@
+mutation CreateAttendance($item: AttendanceInput) {
+  createAttendance(input: $item) {
+    id
+  }
+}

@@ -1,0 +1,27 @@
+type Query {
+  holidayApprieds: [HolidayAppried]
+  holidayAppried(id: ID!): HolidayAppried!
+}
+
+type Mutation {
+  createHolidayAppried(input: HolidayAppriedInput): HolidayAppried!
+  updateHolidayAppried(input: HolidayAppriedInput): HolidayAppried!
+}
+
+type HolidayAppried {
+  id: ID
+  employeeId: Int
+  date: String
+  message: String
+  status: String
+  created: String!
+  updated: String!
+}
+
+input HolidayAppriedInput {
+  id: ID
+  employeeId: Int
+  date: String
+  message: String
+  status: String
+}

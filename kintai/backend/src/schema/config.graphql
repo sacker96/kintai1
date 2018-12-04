@@ -1,0 +1,33 @@
+type Query {
+  configs: [Config]
+  config(name: String!): Config!
+}
+
+type Mutation {
+  updateConfig(input: [ConfigInput]): Config!
+}
+
+type Config {
+  readType: String
+  name: String
+  val1: String
+  val2: String
+  val3: String
+  num1: Int
+  num2: Int
+  num3: Int
+  extra: String
+  updated: String!
+}
+
+input ConfigInput {
+  readType: String
+  name: String
+  val1: String
+  val2: String
+  val3: String
+  num1: Int
+  num2: Int
+  num3: Int
+  extra: String
+}

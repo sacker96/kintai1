@@ -1,0 +1,8 @@
+query GetOverworkApprieds {
+  overworkApprieds {
+    id
+    created
+    updated
+
+  }
+}

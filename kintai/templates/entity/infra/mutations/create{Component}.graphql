@@ -1,0 +1,5 @@
+mutation Create{Name}($item: {Name}Input) {
+  create{Name}(input: $item) {
+    id
+  }
+}

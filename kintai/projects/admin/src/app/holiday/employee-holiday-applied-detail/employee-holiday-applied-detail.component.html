@@ -1,0 +1,16 @@
+<div class="content-header sty-one">
+  <h1>休暇申請管理 / 休暇申請一覧 / 休暇申請詳細</h1>
+</div>
+
+<div class="content">
+  <div class="white">
+
+    <form class="vm" (submit)="submit()" (keydown.enter)="$event.preventDefault()">
+      <fg class="form" [model]="vm.model" [fields]="vm.fields" [form]="vm.form"></fg>
+      <div class="text-center">
+        <button type="submit" color="warn" mat-raised-button>保存</button>
+      </div>
+    </form>
+
+  </div>
+</div>

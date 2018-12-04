@@ -1,0 +1,19 @@
+<div class="content-header sty-one">
+  <h1>スタッフ管理 / スタッフ並び順設定</h1>
+</div>
+
+<div class="content">
+  <div class="white">
+
+    <datatable [rows]="rows" [columns]="columns"></datatable>
+
+    <div class="text-center mt-4">
+      <button type="submit" color="warn" mat-raised-button>保存</button>
+    </div>
+
+  </div>
+</div>
+
+<ng-template #nameTemplate let-row="row" let-value="value" let-i="index">
+  {{row.lname}} {{row.fname}}
+</ng-template>

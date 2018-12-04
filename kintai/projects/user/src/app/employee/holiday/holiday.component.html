@@ -1,0 +1,20 @@
+<div class="content-header sty-one">
+  <h1>申請 / 休暇申請</h1>
+</div>
+
+<div class="content">
+  <div class="white">
+
+    <div class="text-left">
+      <a routerLink="../holiday-new" color="accent" mat-raised-button>新規申請</a>
+    </div>
+
+    <h2 class="title"><i class="fa fa-search"></i>検索条件設定</h2><form class="filter" (submit)="submit()">
+      <fg class="form-inline" [model]="filter.model" [fields]="filter.fields" [form]="filter.form"></fg>
+      <div class="text-center">
+        <button type="submit" mat-raised-button>表示</button>
+      </div>
+    </form>
+
+  </div>
+</div>

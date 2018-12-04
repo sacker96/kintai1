@@ -1,0 +1,8 @@
+query GetAdit($id: ID!) {
+  adit(id: $id) {
+    id
+    created
+    updated
+
+  }
+}

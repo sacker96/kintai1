@@ -1,0 +1,14 @@
+query GetConfig($name: String!) {
+  config(name: $name) {
+    readType
+    name
+    val1
+    val2
+    val3
+    num1
+    num2
+    num3
+    extra
+    updated
+  }
+}

@@ -1,0 +1,25 @@
+<div class="content-header sty-one">
+  <h1>出勤管理 / データ出力 / 出勤簿一覧</h1>
+</div>
+
+<div class="content">
+  <div class="white">
+
+    <h2 class="title"><i class="fa fa-search"></i>検索条件設定</h2>
+    <form class="filter" (submit)="submit()">
+      <fg class="form-inline" [model]="filter.model" [fields]="filter.fields" [form]="filter.form"></fg>
+      <div class="text-center">
+        <button type="submit" mat-raised-button>表示</button>
+      </div>
+    </form>
+
+  </div>
+
+  <div class="white mt-4">
+    <datatable [rows]="rows" [columns]="columns"></datatable>
+  </div>
+</div>
+
+<ng-template #nameTemplate let-row="row" let-value="value" let-i="index">
+  <a routerLink="/staff/new-employee/{{row.id}}">{{row.lname}} {{row.fname}}</a>
+</ng-template>

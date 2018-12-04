@@ -1,0 +1,5 @@
+mutation Update{Name}($item: {Name}Input) {
+  update{Name}(input: $item) {
+    id
+  }
+}

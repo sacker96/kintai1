@@ -1,0 +1,18 @@
+query GetAttendance($id: ID!) {
+  attendance(id: $id) {
+    id
+    employeeId
+    date
+    holiday
+    status
+    free_note
+    start
+    end
+    work
+    rest
+    overwork
+    nighttime
+    created
+    updated
+  }
+}

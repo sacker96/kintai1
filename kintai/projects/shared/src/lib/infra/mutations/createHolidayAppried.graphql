@@ -1,0 +1,5 @@
+mutation CreateHolidayAppried($item: HolidayAppriedInput) {
+  createHolidayAppried(input: $item) {
+    id
+  }
+}

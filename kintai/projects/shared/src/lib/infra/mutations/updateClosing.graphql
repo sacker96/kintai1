@@ -1,0 +1,5 @@
+mutation UpdateClosing($item: ClosingInput) {
+  updateClosing(input: $item) {
+    id
+  }
+}

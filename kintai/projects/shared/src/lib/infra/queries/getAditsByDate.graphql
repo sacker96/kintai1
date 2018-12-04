@@ -1,0 +1,11 @@
+query GetAditsByDate($date: String!) {
+  aditsByDate(date: $date) {
+    id
+    type
+    method
+    aditAt
+    notice
+    status
+    history
+  }
+}

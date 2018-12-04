@@ -1,0 +1,41 @@
+type Query {
+  attendances(from: String!, to: String!, employeeId: ID): [Attendance]
+  attendance(id: ID!): Attendance!
+}
+
+type Mutation {
+  createAttendance(input: AttendanceInput): Attendance!
+  updateAttendance(input: AttendanceInput): Attendance!
+}
+
+type Attendance {
+  id: ID
+  employeeId: Int
+  date: String
+  holiday: String
+  status: String
+  free_note: String
+  start: String
+  end: String
+  work: Int
+  rest: Int
+  overwork: Int
+  nighttime: Int
+  created: String!
+  updated: String!
+}
+
+input AttendanceInput {
+  id: ID
+  employeeId: Int
+  date: String
+  holiday: String
+  status: String
+  free_note: String
+  start: String
+  end: String
+  work: Int
+  rest: Int
+  overwork: Int
+  nighttime: Int
+}

@@ -1,0 +1,18 @@
+query GetAccounts {
+  accounts {
+    created
+    systemId
+    company
+    name
+    busho
+    zip
+    address
+    address2
+    tel
+    email
+    num
+    staff
+    remarks
+    status
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es5",
+    "noImplicitAny": false,
+    "removeComments": false,
+    "sourceMap": true,
+    "typeRoots": [
+      "../node_modules/@types"
+    ],
+    "lib": ["dom", "es2015", "es5"]
+  },
+  "files": [
+    "./test.ts",
+  ]
+}

@@ -1,0 +1,16 @@
+<div class="content-header sty-one">
+  <h1>申請 / 残業申請 / 新規早出残業申請</h1>
+</div>
+
+<div class="content">
+  <div class="white">
+
+    <form class="vm" (submit)="submit()" (keydown.enter)="$event.preventDefault()">
+      <fg class="form" [model]="vm.model" [fields]="vm.fields" [form]="vm.form"></fg>
+      <div class="text-center">
+        <button type="submit" color="warn" mat-raised-button>保存</button>
+      </div>
+    </form>
+
+  </div>
+</div>

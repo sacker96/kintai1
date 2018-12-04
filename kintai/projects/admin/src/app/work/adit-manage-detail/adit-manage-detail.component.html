@@ -1,0 +1,16 @@
+<div class="content-header sty-one">
+  <h1>出勤管理 / データ出力 / 出入詳細</h1>
+</div>
+
+<div class="content">
+  <div class="white">
+
+    <h2 class="title"><i class="fa fa-search"></i>検索条件設定</h2><form class="filter" (submit)="submit()">
+      <fg class="form-inline" [model]="filter.model" [fields]="filter.fields" [form]="filter.form"></fg>
+      <div class="text-center">
+        <button type="submit" mat-raised-button>表示</button>
+      </div>
+    </form>
+
+  </div>
+</div>

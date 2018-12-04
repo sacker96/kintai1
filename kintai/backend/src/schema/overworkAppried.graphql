@@ -1,0 +1,31 @@
+type Query {
+  overworkApprieds: [OverworkAppried]
+  overworkAppried(id: ID!): OverworkAppried!
+}
+
+type Mutation {
+  createOverworkAppried(input: OverworkAppriedInput): OverworkAppried!
+  updateOverworkAppried(input: OverworkAppriedInput): OverworkAppried!
+}
+
+type OverworkAppried {
+  id: ID
+  employeeId: Int
+  date: String
+  start: String
+  end: String
+  message: String
+  status: String
+  created: String!
+  updated: String!
+}
+
+input OverworkAppriedInput {
+  id: ID
+  employeeId: Int
+  date: String
+  start: String
+  end: String
+  message: String
+  status: String
+}

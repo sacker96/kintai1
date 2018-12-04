@@ -1,0 +1,98 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            ff:14:f6:92:fb:ec:ea:5b:c3:5b:d8:2b:1e:c8:d0:23
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=JP, ST=Tokyo, L=Shinjuku-Ku, O=GKLINE, Inc., OU=Information Systems Group, CN=GKLINE, Inc. CA/emailAddress=system-info@gkline.co.jp
+        Validity
+            Not Before: Oct  3 07:09:34 2018 GMT
+            Not After : Sep 30 07:09:34 2028 GMT
+        Subject: C=JP, ST=Tokyo, L=Shinjuku-ku, O=GKLINE, Inc., OU=Information Systems Group, CN=test-kintai-web.gkline.co.jp/emailAddress=info-systems-admin@gkline.co.jp
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:90:41:90:9b:b6:5a:35:36:6f:9a:ad:32:f6:2b:
+                    f4:8c:42:a5:b3:ee:2c:c1:9c:d0:26:54:14:d0:72:
+                    2b:7c:76:03:fd:88:e1:fa:14:c7:5c:b1:c8:ac:49:
+                    3c:d9:06:27:19:f6:76:cd:5d:ed:a5:ac:8a:42:4e:
+                    8a:e3:b7:ee:57:58:10:64:52:d6:0d:fc:92:8a:09:
+                    b1:0f:a8:e7:16:87:6c:21:40:2a:33:31:60:8b:33:
+                    82:f2:ce:29:5f:0e:ad:c5:3b:37:48:ba:4b:28:37:
+                    bf:15:c4:e9:4d:9a:dd:e0:38:9d:d8:28:66:9f:bd:
+                    85:95:ba:11:e9:c3:75:fe:0b:63:3f:a1:90:7d:7b:
+                    9c:b6:ea:f2:48:e6:e7:e7:9a:c5:2b:54:5a:d4:39:
+                    5e:79:b4:54:53:07:2d:cc:ec:3d:26:01:d7:7a:2a:
+                    88:ee:5b:bd:1b:74:9f:24:d3:fd:8d:b1:8a:01:cd:
+                    77:e8:cf:9d:92:2e:aa:8d:a3:8b:97:04:76:07:1c:
+                    0e:c8:28:9b:76:ce:c9:1f:73:a6:ce:ce:b9:53:a4:
+                    0e:2c:46:62:2b:b1:28:ab:9e:a6:bb:86:87:a6:cf:
+                    a0:2d:1d:22:ec:d0:3c:0a:17:8c:22:37:e7:4c:47:
+                    38:78:0a:e8:73:2f:ad:c1:23:87:5e:8d:dc:01:7e:
+                    ab:c3
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                07:C1:39:B4:85:04:CD:D7:B9:14:93:D5:66:DD:3E:C6:E2:D4:30:55
+            X509v3 Authority Key Identifier: 
+                keyid:ED:2B:E7:4E:C1:D2:4A:9E:E1:F6:88:7B:AF:EF:FF:A9:DE:E2:F8:E4
+                DirName:/C=JP/ST=Tokyo/L=Shinjuku-Ku/O=GKLINE, Inc./OU=Information Systems Group/CN=GKLINE, Inc. CA/emailAddress=system-info@gkline.co.jp
+                serial:FE:CE:84:B4:7A:5C:A3:B2
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+            X509v3 Subject Alternative Name: 
+                DNS:test-kintai-web.gkline.co.jp
+    Signature Algorithm: sha256WithRSAEncryption
+         54:83:8f:82:22:8c:5c:a1:61:6d:be:d5:5c:e8:cc:b9:cf:b7:
+         0b:a7:e3:22:77:a8:09:1a:d3:57:88:ef:d8:a1:6f:12:ae:3b:
+         b5:1d:10:62:d2:50:e8:1c:ac:67:19:92:76:9c:6f:9b:ac:e2:
+         13:5d:4b:47:58:3e:0c:48:fe:8a:d1:80:3f:eb:12:0f:99:10:
+         d6:f4:58:d1:bf:dd:fd:b2:27:05:97:85:61:bd:15:80:c5:83:
+         2f:db:30:f4:ed:d6:1d:6b:17:7b:55:ad:de:dc:b0:44:6c:5b:
+         21:cc:3f:9a:bf:97:ec:ca:86:49:df:d2:92:ce:5f:6f:4b:58:
+         30:61:64:51:b2:29:50:47:b4:9e:d1:61:71:17:97:e4:9d:13:
+         ec:11:79:74:f4:13:da:8b:1a:49:bf:8c:2b:6a:08:22:ed:9b:
+         d6:2a:11:ad:a8:48:c3:a0:28:9a:d6:d7:ca:12:25:18:51:3c:
+         c8:80:e8:bc:7b:a7:3d:e7:56:18:83:d9:fd:5e:5f:79:77:a3:
+         39:3b:b3:21:fd:69:3a:b9:65:92:b6:8c:21:60:6c:65:04:7e:
+         02:9a:65:c9:58:d1:99:63:8c:11:60:8a:85:cc:44:a6:b8:1a:
+         ba:83:f6:93:e8:4e:c7:75:14:c1:a2:1a:e9:3b:64:d8:54:15:
+         7f:d6:a4:94
+-----BEGIN CERTIFICATE-----
+MIIFZzCCBE+gAwIBAgIRAP8U9pL77Opbw1vYKx7I0CMwDQYJKoZIhvcNAQELBQAw
+gbExCzAJBgNVBAYTAkpQMQ4wDAYDVQQIEwVUb2t5bzEUMBIGA1UEBxMLU2hpbmp1
+a3UtS3UxFTATBgNVBAoTDEdLTElORSwgSW5jLjEiMCAGA1UECxMZSW5mb3JtYXRp
+b24gU3lzdGVtcyBHcm91cDEYMBYGA1UEAxMPR0tMSU5FLCBJbmMuIENBMScwJQYJ
+KoZIhvcNAQkBFhhzeXN0ZW0taW5mb0Bna2xpbmUuY28uanAwHhcNMTgxMDAzMDcw
+OTM0WhcNMjgwOTMwMDcwOTM0WjCBxTELMAkGA1UEBhMCSlAxDjAMBgNVBAgTBVRv
+a3lvMRQwEgYDVQQHEwtTaGluanVrdS1rdTEVMBMGA1UEChMMR0tMSU5FLCBJbmMu
+MSIwIAYDVQQLExlJbmZvcm1hdGlvbiBTeXN0ZW1zIEdyb3VwMSUwIwYDVQQDExx0
+ZXN0LWtpbnRhaS13ZWIuZ2tsaW5lLmNvLmpwMS4wLAYJKoZIhvcNAQkBFh9pbmZv
+LXN5c3RlbXMtYWRtaW5AZ2tsaW5lLmNvLmpwMIIBIjANBgkqhkiG9w0BAQEFAAOC
+AQ8AMIIBCgKCAQEAkEGQm7ZaNTZvmq0y9iv0jEKls+4swZzQJlQU0HIrfHYD/Yjh
++hTHXLHIrEk82QYnGfZ2zV3tpayKQk6K47fuV1gQZFLWDfySigmxD6jnFodsIUAq
+MzFgizOC8s4pXw6txTs3SLpLKDe/FcTpTZrd4Did2Chmn72FlboR6cN1/gtjP6GQ
+fXucturySObn55rFK1Ra1DleebRUUwctzOw9JgHXeiqI7lu9G3SfJNP9jbGKAc13
+6M+dki6qjaOLlwR2BxwOyCibds7JH3Omzs65U6QOLEZiK7Eoq56mu4aHps+gLR0i
+7NA8CheMIjfnTEc4eArocy+twSOHXo3cAX6rwwIDAQABo4IBYjCCAV4wCQYDVR0T
+BAIwADAdBgNVHQ4EFgQUB8E5tIUEzde5FJPVZt0+xuLUMFUwgeYGA1UdIwSB3jCB
+24AU7SvnTsHSSp7h9oh7r+//qd7i+OShgbekgbQwgbExCzAJBgNVBAYTAkpQMQ4w
+DAYDVQQIEwVUb2t5bzEUMBIGA1UEBxMLU2hpbmp1a3UtS3UxFTATBgNVBAoTDEdL
+TElORSwgSW5jLjEiMCAGA1UECxMZSW5mb3JtYXRpb24gU3lzdGVtcyBHcm91cDEY
+MBYGA1UEAxMPR0tMSU5FLCBJbmMuIENBMScwJQYJKoZIhvcNAQkBFhhzeXN0ZW0t
+aW5mb0Bna2xpbmUuY28uanCCCQD+zoS0elyjsjATBgNVHSUEDDAKBggrBgEFBQcD
+ATALBgNVHQ8EBAMCBaAwJwYDVR0RBCAwHoIcdGVzdC1raW50YWktd2ViLmdrbGlu
+ZS5jby5qcDANBgkqhkiG9w0BAQsFAAOCAQEAVIOPgiKMXKFhbb7VXOjMuc+3C6fj
+IneoCRrTV4jv2KFvEq47tR0QYtJQ6BysZxmSdpxvm6ziE11LR1g+DEj+itGAP+sS
+D5kQ1vRY0b/d/bInBZeFYb0VgMWDL9sw9O3WHWsXe1Wt3tywRGxbIcw/mr+X7MqG
+Sd/Sks5fb0tYMGFkUbIpUEe0ntFhcReX5J0T7BF5dPQT2osaSb+MK2oIIu2b1ioR
+rahIw6AomtbXyhIlGFE8yIDovHunPedWGIPZ/V5feXejOTuzIf1pOrllkraMIWBs
+ZQR+ApplyVjRmWOMEWCKhcxEprgauoP2k+hOx3UUwaIa6Ttk2FQVf9aklA==
+-----END CERTIFICATE-----
+

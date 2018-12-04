@@ -1,0 +1,33 @@
+version: "3"
+services:
+  # base:
+  #  build: /opt/docker/Kintai-System/01_base_image/build
+  #  image: centos7jp:base
+  #  tty: true
+  db:
+    build: ./02_db_server/build
+    image: centos7jp:db
+    tty: true
+    volumes:
+      - datastore:/var/lib/mysql
+    ports:
+      - "3306:3306"
+  web:
+    build: ./03_web_server/build
+    image: centos7jp:web
+    tty: true
+    ports:
+      - "80:80"
+      - "443:443"
+    #- "3000:3000"
+    #- "4000:4000"
+    volumes:
+      - /var/lib/docker/disk01/etc/letsencrypt:/etc/letsencrypt
+      - /var/lib/docker/disk01/var/lib/letsencrypt:/var/lib/letsencrypt
+    #- /var/lib/docker/disk01/var/data/node_apps:/var/data/node_apps
+volumes:
+  datastore:
+    driver_opts:
+      type: none
+      device: /var/lib/docker/disk01/var/lib/mysql
+      o: bind

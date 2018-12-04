@@ -1,0 +1,52 @@
+type Query {
+  employees: [Employee]
+  employee(id: ID!): Employee!
+  me: Employee!
+}
+
+type Mutation {
+  createEmployee(input: EmployeeInput): Employee!
+  updateEmployee(input: EmployeeInput): Employee!
+}
+
+type Employee {
+  id: ID
+  lname: String!
+  fname: String!
+  email: String!
+  tel: String
+  birth: String
+  employee_code: String!
+  password: String
+  salary: String
+  transportation: String
+  enter: String
+  leave: String
+  free_note: String
+  free_note_2: String
+  free_note_3: String
+  tags: String
+  felica: String
+  created: String!
+  updated: String!
+}
+
+input EmployeeInput {
+  id: ID
+  lname: String!
+  fname: String!
+  email: String!
+  tel: String
+  birth: String
+  employee_code: String!
+  password: String
+  salary: String
+  transportation: String
+  enter: String
+  leave: String
+  free_note: String
+  free_note_2: String
+  free_note_3: String
+  tags: String
+  felica: String
+}

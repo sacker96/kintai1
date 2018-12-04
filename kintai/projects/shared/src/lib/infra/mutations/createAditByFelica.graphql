@@ -1,0 +1,5 @@
+mutation CreateAditByFelica($felica: String!) {
+  createAditByFelica(felica: $felica) {
+    id
+  }
+}

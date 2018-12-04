@@ -1,0 +1,21 @@
+<div class="content-header sty-one">
+  <h1>スタッフ管理 / スタッフ一覧 / スタッフ登録</h1>
+</div>
+
+<div class="content">
+  <div class="white">
+
+    <h2 class="title"><i class="fa fa-user-o"></i>スタッフ登録</h2>
+
+    <form class="vm" (submit)="submit()" (keydown.enter)="$event.preventDefault()">
+      <input type="password" name="dummypass" style="top: -100px; left: -200px; position: fixed;" />
+      <fg class="form" [model]="vm.model" [fields]="vm.fields" [form]="vm.form"></fg>
+      <button mat-raised-button (click)="startInitCardReader($event)" *ngIf="!readerStatus">felica 読取</button>
+      <span *ngIf="readerStatus">IDカードをタッチしてください</span>
+      <div class="text-center">
+        <button type="submit" color="warn" mat-raised-button>保存</button>
+      </div>
+    </form>
+
+  </div>
+</div>

@@ -1,0 +1,5 @@
+mutation UpdateOverworkAppried($item: OverworkAppriedInput) {
+  updateOverworkAppried(input: $item) {
+    id
+  }
+}

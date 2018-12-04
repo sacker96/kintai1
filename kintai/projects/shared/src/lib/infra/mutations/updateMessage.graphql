@@ -1,0 +1,5 @@
+mutation UpdateMessage($item: MessageInput) {
+  updateMessage(input: $item) {
+    id
+  }
+}

@@ -1,0 +1,39 @@
+<div class="content-header sty-one">
+  <h1>打刻修正</h1>
+</div>
+
+<div class="content">
+  <div class="white">
+
+    <h2 class="title"><i class="fa fa-search"></i>検索条件設定</h2><form class="filter" (submit)="submit()">
+      <fg class="form-inline" [model]="filter.model" [fields]="filter.fields" [form]="filter.form"></fg>
+      <div class="text-center">
+        <button type="submit" mat-raised-button>表示</button>
+      </div>
+    </form>
+
+  </div>
+
+  <div class="white mt-4">
+    <h2 class="title">打刻一覧</h2>
+    <datatable [rows]="rows" [columns]="columns"></datatable>
+  </div>
+
+  <div class="white mt-4">
+    <h2 class="title">打刻データ修正</h2>
+    <form class="vm" (submit)="submit2()" (keydown.enter)="$event.preventDefault()">
+      <fg class="form" [model]="vm.model" [fields]="vm.fields" [form]="vm.form"></fg>
+      <div class="text-center">
+        <button type="submit" color="warn" mat-raised-button>送信</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<ng-template #action1Template let-row="row" let-value="value" let-i="index">
+  <button (click)="modify(row)" color="primary" mat-raised-button>修正</button>
+</ng-template>
+
+<ng-template #action2Template let-row="row" let-value="value" let-i="index">
+  <button (click)="remove(row)" color="warn" mat-raised-button>削除</button>
+</ng-template>

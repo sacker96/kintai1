@@ -1,0 +1,8 @@
+query Get{Name}($id: ID!) {
+  {name}(id: $id) {
+    id
+    created
+    updated
+
+  }
+}
